@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "/Users/premiersoft/Projects/mcs/cs521/project3/project3-ai.py", line 1312, in <module>
+    main()
+    ~~~~^^
+  File "/Users/premiersoft/Projects/mcs/cs521/project3/project3-ai.py", line 1268, in main
+    report = parse_report(driver, link, new_column_records)
+  File "/Users/premiersoft/Projects/mcs/cs521/project3/project3-ai.py", line 1042, in parse_report
+    wait_for_element_with_refresh(driver, (By.CSS_SELECTOR, "main.main-content"))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/premiersoft/Projects/mcs/cs521/project3/project3-ai.py", line 921, in wait_for_element_with_refresh
+    WebDriverWait(driver, INITIAL_WAIT_SECONDS).until(EC.presence_of_element_located(locator))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/support/expected_conditions.py", line 92, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 823, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.57)
+Stacktrace:
+0   chromedriver                        0x0000000100c93abc cxxbridge1$str$ptr + 3192864
+1   chromedriver                        0x0000000100c8ba8c cxxbridge1$str$ptr + 3160048
+2   chromedriver                        0x00000001007577c0 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75348
+3   chromedriver                        0x000000010073021c chromedriver + 164380
+4   chromedriver                        0x00000001007c7f64 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 536056
+5   chromedriver                        0x00000001007def58 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630252
+6   chromedriver                        0x0000000100794e50 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326884
+7   chromedriver                        0x0000000100c51248 cxxbridge1$str$ptr + 2920364
+8   chromedriver                        0x0000000100c54a28 cxxbridge1$str$ptr + 2934668
+9   chromedriver                        0x0000000100c371fc cxxbridge1$str$ptr + 2813792
+10  chromedriver                        0x0000000100c552a8 cxxbridge1$str$ptr + 2936844
+11  chromedriver                        0x0000000100c28024 cxxbridge1$str$ptr + 2751880
+12  chromedriver                        0x0000000100c7a988 cxxbridge1$str$ptr + 3090156
+13  chromedriver                        0x0000000100c7ab04 cxxbridge1$str$ptr + 3090536
+14  chromedriver                        0x0000000100c8b6e4 cxxbridge1$str$ptr + 3159112
+15  libsystem_pthread.dylib             0x0000000187000c08 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000186ffbba8 thread_start + 8
+
