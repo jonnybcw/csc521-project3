@@ -50,3 +50,9 @@ See the `screenshots/` folder for captures of the scraping process.
 
 Erdenetulga Bilegdemberel
 Jonny Eduardo Banach
+
+### Manual Validation
+
+The `palisades_fire_compiled.xlsx` spreadsheet was manually validated to ensure the data was scraped correctly.
+We have selected 5 random reports and compared the data with the original source.
+The following reports were used for validation: 26, 61, 154, 207 and 340.
