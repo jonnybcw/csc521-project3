@@ -1,6 +1,6 @@
 # Palisades Fire Incident Reports — Data Extraction
 
-This folder contains a Python script that scrapes all 344 Palisades Fire incident updates and compiles them into a single spreadsheet.
+The `project3.py` script scrapes all 344 Palisades Fire incident updates and compiles them into a single spreadsheet.
 
 - Source: https://www.fire.ca.gov/incidents/2025/1/7/palisades-fire/updates
 - Output: `3. palisades_fire_compiled.xlsx`
