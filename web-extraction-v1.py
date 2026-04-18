@@ -166,7 +166,7 @@ for update in updates:
 driver.quit()
 
 # Export to spreadsheet
-excel_filename = "3. palisades_fire_compiled.xlsx"
+excel_filename = "palisades_fire_compiled.xlsx"
 sheet_name = "Palisades_Updates"
 df = pd.DataFrame(reports)
 if os.path.exists(excel_filename):

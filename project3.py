@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 BASE_URL = "https://www.fire.ca.gov"
 UPDATES_URL = f"{BASE_URL}/incidents/2025/1/7/palisades-fire/updates"
-OUTPUT_EXCEL = "3. palisades_fire_compiled.xlsx"
+OUTPUT_EXCEL = "palisades_fire_compiled.xlsx"
 OUTPUT_SHEET = "Palisades_Updates"
 NEW_COLUMNS_LOG = "NEW_COLUMNS_README.md"
 WAIT_TIMEOUT_SECONDS = 20

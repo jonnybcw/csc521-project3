@@ -3,7 +3,7 @@
 The `project3.py` script scrapes all 344 Palisades Fire incident updates and compiles them into a single spreadsheet.
 
 - Source: https://www.fire.ca.gov/incidents/2025/1/7/palisades-fire/updates
-- Output: `3. palisades_fire_compiled.xlsx`
+- Output: `palisades_fire_compiled.xlsx`
 
 ## Tools and libraries
 
@@ -22,7 +22,7 @@ The `project3.py` script scrapes all 344 Palisades Fire incident updates and com
    - Apply targeted text-range fallbacks for columns whose content isn't wrapped in a clean heading.
    - Trim each field at known downstream section markers so content never leaks across columns.
    - Export the rendered page as a PDF (`Page.printToPDF`), compute its page count with `pypdf`, and store the PDF file name and page count alongside the report data.
-3. After all reports are parsed, sort them chronologically by `Report_Date` + `Report_Time`, assign `Report_Sequence` as `001`..`344`, and write the rows into `3. palisades_fire_compiled.xlsx`.
+3. After all reports are parsed, sort them chronologically by `Report_Date` + `Report_Time`, assign `Report_Sequence` as `001`..`344`, and write the rows into `palisades_fire_compiled.xlsx`.
 
 ## Extra credit (Rule 4)
 
@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
 python3 project3.py
 ```
 
-On success the script writes `3. palisades_fire_compiled.xlsx` with 344 rows.
+On success the script writes `palisades_fire_compiled.xlsx` with 344 rows.
 
 ## Screenshots
 
