@@ -1,1 +1,5 @@
-pdfplumber>=0.11.0
+pandas>=2.0
+beautifulsoup4>=4.12
+openpyxl>=3.1
+pypdf>=4.0
+selenium>=4.15
