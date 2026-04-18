@@ -45,3 +45,8 @@ On success the script writes `3. palisades_fire_compiled.xlsx` with 344 rows.
 ## Screenshots
 
 See the `screenshots/` folder for captures of the scraping process.
+
+### Contributors
+
+Erdenetulga Bilegdemberel
+Jonny Eduardo Banach
